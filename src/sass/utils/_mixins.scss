@@ -1,0 +1,12 @@
+@mixin color($color){
+    color: $color; 
+}
+
+@mixin background-color($background-color){
+    background-color: $background-color; 
+}
+
+@mixin padding($padding){
+    padding: $padding; 
+}
+

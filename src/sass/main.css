@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h2, h3, h4, h5, h6 {
+  letter-spacing: 1.5px;
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url("/fonts/Helvetica/HelveticaNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica-Medium';
+  src: url("/fonts/Helvetica/HelveticaNeueMedium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("/fonts/Helvetica/Helvetica.ttf") format("truetype");
+  font-style: normal;
+}
+
+.container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 812px;
+  width: 375px;
+  padding: 18px 20px 17px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#34C7A0), to(#008AA2));
+  background-image: linear-gradient(to bottom, #34C7A0, #008AA2);
+}
+
+.navigation {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 30px;
+  padding: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .navItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 23px;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: 'Helvetica-Medium';
+}
+
+.navigation .activeClassName {
+  background: #FFFFFF;
+  color: #00B6A3;
+  opacity: 1;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 22px 20px;
+  border-radius: 28px;
+  margin-bottom: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-information {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px;
+}
+
+.card .total, .card .averageTime {
+  font-size: 38px;
+  font-family: "Helvetica-Bold";
+  color: #FFFFFF;
+}
+
+.card .averageTime {
+  padding: 25px 0;
+}
+
+.card h3 {
+  margin-bottom: 3px;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.card h4 {
+  color: #FFFFFF;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.title, .title-details {
+  background-color: #FFFFFF;
+  padding: 24px 27px;
+  border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1, .title-details h1 {
+  color: #00B6A3;
+  font-size: 34px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: "Helvetica-Bold";
+}
+
+.title h4, .title-details h4 {
+  color: #898694;
+  font-size: 16px;
+}
+
+.title-details {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 24px 10px;
+}
+
+.title-details h1 {
+  color: #FFFFFF;
+}
+
+.title-details h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.icon, .icon-directions {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon i, .icon-directions i {
+  color: #FFFFFF;
+}
+
+.icon-directions {
+  background-color: #00B6A3;
+  opacity: 0.25;
+}
+
+.left {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 555px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  padding-top: 40px;
+}
+
+.steps .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 231px;
+  height: 231px;
+  border-radius: 50%;
+  border: 8px solid #00B6A3;
+  margin-bottom: 30px;
+}
+
+.steps-title {
+  text-align: center;
+  margin-top: 6px;
+  color: #151C1F;
+  font-size: 20px;
+  font-family: "Helvetica-Medium";
+}
+
+.steps-subtitle {
+  font-size: 48px;
+  font-family: "Helvetica-Bold";
+  text-align: center;
+}
+
+.steps .information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  text-align: center;
+}
+
+.steps .information .info {
+  margin-top: 85px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.steps .information .info p {
+  font-size: 18px;
+  color: #B3B3B3;
+  font-family: "Helvetica-Medium";
+}
+
+.steps .information .info h2 {
+  font-size: 40px;
+  color: #00B6A3;
+  font-family: "Helvetica-Bold";
+}
+/*# sourceMappingURL=main.css.map */

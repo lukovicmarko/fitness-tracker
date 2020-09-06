@@ -1,0 +1,16 @@
+.container{    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 812px;
+    width: 375px;
+    padding: 18px 20px 17px;  
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    background-image: linear-gradient(to bottom,$color-light-green,$color-dark-green);
+} 
+
+

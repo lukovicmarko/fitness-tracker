@@ -1,0 +1,53 @@
+.steps{
+    display: flex;
+    flex-direction: column;
+    flex: 1;   
+    height: 555px;
+    background-color: $color-white;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-top: 40px;      
+    .circle {            
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;    
+        width: 231px;
+        height: 231px;
+        border-radius: 50%;
+        border: 8px solid $color-green;   
+        margin-bottom: 30px;    
+    }    
+    &-title{
+        text-align: center;
+        margin-top: 6px;       
+        color: $color-black;
+        font-size: 20px;
+        font-family: "Helvetica-Medium";
+    }
+    &-subtitle{
+        font-size: 48px;
+        font-family: "Helvetica-Bold";
+        text-align: center;
+    }
+    .information{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        text-align: center;      
+        .info{           
+            margin-top: 85px;   
+            border-right: 1px solid rgba(0, 0, 0, 0.1);            
+            p{
+                font-size: 18px;
+                color: $color-light-grey;
+                font-family: "Helvetica-Medium";
+            }
+            h2{
+                font-size: 40px;
+                color: $color-green;
+                font-family: "Helvetica-Bold";
+            }
+        }
+    }
+}

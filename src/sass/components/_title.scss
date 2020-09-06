@@ -1,0 +1,30 @@
+.title{
+    @include background-color($color-white);  
+    @include padding(24px 27px);
+    border-radius: 28px;  
+    display: flex;
+    align-items: center;
+    h1{
+        @include color($color-green);       
+        font-size: 34px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-family:"Helvetica-Bold";
+    }
+    h4{          
+        @include color($color-grey);  
+        font-size: 16px;      
+    }
+}
+
+.title-details{
+    @extend .title;
+    @include background-color($transparent-bg);   
+    @include padding(24px 10px);
+    h1{
+        @include color($color-white);       
+    }    
+    h4{  
+        @include color($transparent-text);           
+    }
+}
